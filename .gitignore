@@ -1,0 +1,58 @@
+# Private conversion workspaces: sources, book profiles, repairs and artifacts.
+/local/
+
+# Legacy workspace locations, to prevent accidental reintroduction.
+/book/
+/elephant/
+/prototype/
+
+# Generated work and reports, wherever a conversion is run.
+**/build/
+**/output/
+**/rendered/
+/tmp/
+/dist/
+*.log
+
+# Source books, ebook packages and extracted publication assets.
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+*.xhtml
+*.opf
+*.ncx
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.webp
+*.woff
+*.woff2
+*.ttf
+*.otf
+
+# Python environments and caches.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Local settings and operating-system metadata.
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+[Dd]esktop.ini
+Thumbs.db
+.DS_Store

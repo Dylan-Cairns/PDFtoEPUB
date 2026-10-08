@@ -1,0 +1,97 @@
+:root {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.48;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 43rem;
+  padding: 1rem 1.1rem 4rem;
+}
+
+.book-section, nav, .title-page, .cover-page { break-before: page; }
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: normal;
+  margin: 2.8rem 0 2.2rem;
+  text-align: left;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2.4rem 0 1.3rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 1.6rem 0 0.8rem;
+}
+
+.chapter-number {
+  display: inline-block;
+  margin-right: 0.55em;
+}
+
+blockquote { margin: 1rem 1.8rem; }
+blockquote p { margin: 0; text-indent: 0; }
+
+.book-section > p { margin: 0; text-indent: 1.25em; }
+
+ul { padding-left: 1.5rem; }
+li { margin: 0.3rem 0; }
+.sublist { margin: 0.2rem 1.5rem 0.8rem 2.4rem; }
+.strategy-box { border: 1px solid #777; margin: 1.5rem 0; padding: 0.8rem 1.1rem; }
+.strategy-box h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1rem; margin: 0 0 0.8rem; }
+.alpha-list { list-style-type: lower-alpha; padding-left: 1.6rem; }
+
+figure {
+  break-inside: avoid;
+  margin: 1.6rem auto;
+  max-width: 100%;
+}
+
+figure img { display: block; height: auto; margin: 0 auto; max-width: 100%; }
+figcaption { font-size: 0.86rem; margin-top: 0.65rem; }
+.figure-label { display: block; font-family: Arial, Helvetica, sans-serif; font-weight: 600; }
+
+.title-page { min-height: 80vh; text-align: left; }
+.title-page h1 { font-size: 2.5rem; margin-top: 16vh; }
+.subtitle { font-size: 1.2rem; }
+.author { font-size: 1.15rem; margin-top: 5rem; }
+.publisher { margin-top: 10rem; }
+
+.cover-page, .cover-page img { display: block; margin: 0; max-height: 100vh; max-width: 100%; padding: 0; }
+.copyright { font-size: 0.82rem; }
+.copyright p { margin: 1rem 0; text-indent: 0; }
+.dedication, .epigraph { min-height: 65vh; display: flex; flex-direction: column; justify-content: center; }
+.dedication p, .epigraph p { text-indent: 0; }
+
+nav ol, .notes-contents, .index-list { list-style: none; padding-left: 0; }
+nav ol ol { padding-left: 1.25rem; }
+.strategy-box > ol { margin-bottom: 0; }
+.auxiliary-nav { display: none; }
+.pagebreak { display: inline; }
+sup { font-size: 0.7em; line-height: 0; }
+
+.glossary dt { font-weight: 600; margin-top: 1rem; }
+.glossary dd { margin: 0.2rem 0 0 1.2rem; }
+.note-group ol { padding-left: 2.5rem; }
+.note-group li { margin-bottom: 0.85rem; padding-left: 0.25rem; }
+.note-backlink { font-family: sans-serif; text-decoration: none; }
+.references p { font-size: 0.9rem; margin: 0 0 0.8rem; padding-left: 1.2em; text-indent: -1.2em; }
+
+.book-section > h1 + p, .book-section > h2 + p, .book-section > h3 + p { text-indent: 0; }
+
+.index-list { column-count: 2; column-gap: 2.2rem; font-size: 0.86rem; }
+.index-list li { break-inside: avoid; margin: 0 0 0.3rem; padding-left: 1em; text-indent: -1em; }
+
+.prototype-notice { background: #eef4f7; border: 1px solid #9fb4bf; padding: 1rem; }
+.visually-hidden { clip: rect(0 0 0 0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
+
+@media (max-width: 38rem) {
+  .index-list { column-count: 1; }
+  blockquote { margin-left: 1rem; margin-right: 1rem; }
+}
